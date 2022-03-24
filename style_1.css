@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    left: 0;
+    right: 0;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('wallpaper6.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#menu-bars{
+    font-size: 25px;
+    color: red;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media (max-width:650px)
+{
+    #menu-bars{
+        display: initial;
+    }
+    nav ul{
+        top: 100%;
+        left: -300px;
+        position: absolute;
+        background-color: rgba(196, 247, 221, 0.795);
+        padding: 20px 10px;
+        padding-right: 30px;
+        width: 30%;
+        height: 100vh;
+        transition: 1s;
+    }
+    nav ul.active{
+        left: 0;
+        transition: 0.5s;
+    }
+    nav ul li{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(200, 250, 200);
+    padding: 5px 10px;
+    position: fixed;
+    align-items: center;
+}
+
+
+nav .logo a{
+    color: red;
+    font-size: 30px;
+    font-weight: 800;
+
+}
+nav .logo a span{
+    color: rgb(4, 110, 9);
+}
+nav .logo a:hover{
+    color: rgb(4, 110, 9);
+}
+nav .logo a:hover span{
+    color: red;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 10px;
+    position: relative;
+}
+nav ul li a{
+    color: black;
+    font-size: larger;
+    font-weight: 700;
+    text-decoration: none;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: black;
+    display: block;
+    margin: auto;
+}
+nav ul li a:hover::after{
+    width: 100%;
+    transition: 0.6s;
+}
+
+nav .icons i{
+    font-size: 23px;
+    margin: auto 5px;
+    cursor: pointer;
+}
+
+nav .icons i:hover{
+    color: rgb(168, 71, 7);
+}
+
+nav .search-bar-container{
+    top: 100%;
+    left: 0; right: 0;
+    position: absolute;
+    background-color: rgb(200, 250, 200);
+    width: 100%;
+    align-items: center;
+    display: flex;
+    padding: 10px 15px;
+    border-top: solid 1px black;
+    clip-path: polygon(0 0, 100% 0,100% 0,0 0);  
+}
+nav .search-bar-container.active{
+    clip-path: polygon(0 0,100% 0, 100% 100%, 0 100%);
+}
+nav .search-bar-container #search-box{
+    width: 100%;
+    font-size: large;
+    padding-left: 5px;
+    border: transparent;
+}
+nav .search-bar-container label{
+    margin: auto 15px;
+    padding-right: 10px;
+    font-size: 23px;
+    cursor: pointer;
+}
+nav .search-bar-container label:hover{
+    color: rgb(168, 71, 7);
+}
+
+.login-form-container{
+    top: -100%;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.945);
+    transition: 1s;
+}
+.login-form-container.active{
+    top: 0;
+    transition: 0.5s;
+}
+.login-form-container form{
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.login-form-container form h3{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+}
+.login-form-container form .box{
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: rgba(228, 222, 222, 0.473);
+    border: 1px solid rgba(0, 0, 0, 0.466);
+    border-radius: 5px;
+    font-size: 15px;
+}
+.login-form-container form .box:hover{
+    border: solid 1px rgb(255, 102, 0);
+}
+.login-form-container form .login-btn{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(255, 102, 0);
+    border: 1px solid rgb(255, 102, 0);
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+}
+.login-form-container form .login-btn:hover{
+    border: 1px solid rgb(255, 102, 0);
+    background-color: rgba(228, 222, 222, 0.473);
+    color: rgb(255, 102, 0);
+}
+.login-form-container form label{
+    font-size: 14px;
+}
+
+.login-form-container form p{
+    margin: 10px auto;
+    font-size: 14px;
+}
+
+.login-form-container form p a{
+    color: rgb(255, 102, 0);
+}
+.login-form-container form p a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.login-form-container #close-form{
+    left: 20px;
+    top: 20px;
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    cursor: pointer;
+}
+
