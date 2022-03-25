@@ -3,48 +3,50 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SAMPLE</title>
         <link rel="stylesheet" href="style_1.css" class="style">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <title>NavBar</title>
+   
     </head>
     <body>
         <section class="header">
             <nav>
-                <div id="menu-bars" class="fa fa-bars"></div>
-                <div class="logo"><a href="#">L<span>O</span>G<span>O</span></a></div>
+                <div class="fa fa-bars" id="menu-bars"></div>
+                <div class="logo">
+                    <p>L<span>O</span>G<span>O</span></p>
+                </div>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Facilities</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Service</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">About</a></li>
                 </ul>
                 <div class="icons">
-                    <i class="fa fa-search" id="search-btn"></i>
                     <i class="fa fa-user" id="user-btn"></i>
+                    <i class="fa fa-search" id="search-btn"></i> 
                 </div>
-                <form action="" class="search-bar-container">
+                <form action="" class="search-container">
                     <input type="search" id="search-box" placeholder="Search here">
                     <label for="search-box" class="fa fa-search"></label>
                 </form>
             </nav>
-
-            <div class="login-form-container">
-                <i class="fa fa-times" id="close-form"></i>
+            <div class="login-container">
+                <div class="fa fa-times" id="close-login"></div>
                 <form action="">
                     <h3>LOGIN</h3>
-                    <input type="email" class="box" placeholder="Enter Email">
-                    <input type="password" class="box" placeholder="Enter Password">
-                    <input type="submit" value="LOGIN" class="login-btn">
+                    <input type="email" class="box" placeholder="Enter email">
+                    <input type="password" class="box" placeholder="Enter password">
+                    <input type="submit" class="login-btn" value="LOGIN">
                     <input type="checkbox" id="remember">
-                    <label for="remember">Remember Me</label>
+                    <label for="remember">Remember me</label>
                     <p>Forget Password? <a href="#">Click here</a></p>
-                    <p>Don't have account <a href="#">Register now</a></p>
+                    <p>Don't have an account? <a href="#">Register Now</a></p>
                 </form>
             </div>
+                
         </section>
-
-        <script src="script_1.js"></script>
     </body>
+    <script src="script_1.js"></script>
 </html>
